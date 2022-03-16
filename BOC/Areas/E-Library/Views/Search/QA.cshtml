@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "QA";
+    Layout = "~/Views/Shared/_DeskTop.cshtml";
+}
+ <form action="/E-Library/Search/QA" method="post">
+<div style="width:50%;margin:auto;margin-top:20px;padding-top:10px">
+
+
+    <p style="font-size:18px">1.Bamboo Airways được thành lập vào năm nào?</p>
+    
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+      <label class="form-check-label" for="check1" style="font-size:18px">A.2015</label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+      <label class="form-check-label" for="check2" style="font-size:18px">B.2016</label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" >
+      <label class="form-check-label" style="font-size:18px">C.2018</label>
+    </div>
+   
+
+    
+ 
+    <p style="font-size:18px">2. Bamboo Airways thuộc tập đoàn nào sau đây?</p>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+      <label class="form-check-label" for="check1" style="font-size:18px">A.VNPT</label>
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+      <label class="form-check-label" for="check2" style="font-size:18px">B.Viettel</label>
+    </div>
+     <div class="form-check">
+      <input type="checkbox" class="form-check-input" >
+      <label class="form-check-label" style="font-size:18px">C.FLC</label>
+    </div>
+
+
+
+
+   <button type="submit" class="btn btn-primary mt-3" style="font-size:16px">Nộp/Submit</button>
+   <div style="margin-top:10px;color:red;font-size:20px">@ViewBag.Result</div>
+ 
+
+</div>
+
+
+ </form>
